@@ -1,13 +1,14 @@
 import { Button } from "@/components/ui/button";
+import Section from "@/components/ui/section";
 import React from "react";
 
 type Props = {};
 
 const HomePage = (props: Props) => {
   return (
-    <div className="p-10">
-      <Button variant="link">More Info</Button>
-    </div>
+    <Section>
+      <Button variant={"outline"}>More Info</Button>
+    </Section>
   );
 };
 
