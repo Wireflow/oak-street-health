@@ -12,6 +12,7 @@ const sectionVariants = cva("max-w-[2160px] flex flex-col", {
       "light-green": "bg-theme-light-green",
       "ligher-green": "bg-theme-lighter-green",
       "bright-white": "bg-theme-bright-white",
+      blue: 'bg-theme-blue'
     },
     size: {
       lg: "p-6 md:p-16 lg:p-18",

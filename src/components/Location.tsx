@@ -10,6 +10,8 @@ const Location = (props: Props) => {
   return (
     <Section>
       <div className="flex flex-col gap-[100px] pb-10">
+
+
         <div className="flex flex-col gap-10">
           <div className="flex flex-col gap-10">
             <Image src="/map.png" alt="map" width={1300} height={800} />
@@ -30,6 +32,8 @@ const Location = (props: Props) => {
             </div>
           </div>
         </div>
+
+
         <div className="flex flex-col gap-10">
           <div className="flex flex-col lg:flex-row lg:items-center justify-between  gap-5">
             <div>
@@ -57,6 +61,8 @@ const Location = (props: Props) => {
             </p>
           </div>
         </div>
+
+        
       </div>
     </Section>
   );
