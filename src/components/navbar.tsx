@@ -6,7 +6,7 @@ type Props = {};
 
 const Navbar = (props: Props) => {
   return (
-    <Section className="flex justify-between items-center">
+    <Section background={"ligher-green"}>
       <Logo />
     </Section>
   );
