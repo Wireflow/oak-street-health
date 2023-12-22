@@ -1,6 +1,7 @@
-import Navbar from "@/components/navbar";
 import { Button } from "@/components/ui/button";
-import Section from "@/components/ui/section";
+import Navbar from "@/components/navbar";
+import Footer from "@/components/Footer";
+import Location from "@/components/Location";
 import React from "react";
 
 type Props = {};
@@ -9,6 +10,8 @@ const HomePage = (props: Props) => {
   return (
     <>
       <Navbar />
+      <Location />
+      <Footer />
     </>
   );
 };
