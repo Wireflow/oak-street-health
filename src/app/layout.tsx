@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Cabin } from "next/font/google";
 import "./globals.css";
+import { cn } from "@/lib/utils";
 
 const cabin = Cabin({ subsets: ["latin"] });
 
@@ -16,7 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={cabin.className}>{children}</body>
+      <body className={cn(cabin.className, "max-w-[1920px] mx-auto")}>
+        {children}
+      </body>
     </html>
   );
 }

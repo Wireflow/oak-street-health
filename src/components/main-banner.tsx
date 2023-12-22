@@ -9,7 +9,7 @@ const MainBanner = (props: Props) => {
     <Section
       size={"md"}
       background={"green"}
-      className="flex-row gap-4 items-center justify-center "
+      className="flex flex-row gap-4 items-center justify-center"
     >
       <Image
         src={"/svg-logo-icon.svg"}

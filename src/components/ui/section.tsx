@@ -2,7 +2,7 @@ import React from "react";
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
-const sectionVariants = cva("max-w-[2160px] flex flex-col", {
+const sectionVariants = cva("", {
   variants: {
     background: {
       default: "bg-white",
@@ -12,21 +12,15 @@ const sectionVariants = cva("max-w-[2160px] flex flex-col", {
       "light-green": "bg-theme-light-green",
       "ligher-green": "bg-theme-lighter-green",
       "bright-white": "bg-theme-bright-white",
-      blue: 'bg-theme-blue'
+      blue: "bg-theme-blue",
     },
     size: {
       lg: "p-6 md:p-16 lg:p-18",
       sm: "p-6 md:p-6 lg:p-8",
       md: "p-6 md:p-10 lg:p-12",
     },
-    position: {
-      start: "items-start",
-      center: "items-center",
-      end: "items-end",
-    },
   },
   defaultVariants: {
-    position: "center",
     size: "sm",
     background: "default",
   },
@@ -38,17 +32,11 @@ interface SectionProps
   children?: React.ReactNode;
 }
 
-const Section = ({
-  children,
-  background,
-  size,
-  position,
-  className,
-}: SectionProps) => {
+const Section = ({ children, background, size, className }: SectionProps) => {
   return (
     <div
       className={cn(
-        sectionVariants({ size, background, position, className }),
+        sectionVariants({ size, background, className }),
         "mx-auto"
       )}
     >
