@@ -16,7 +16,7 @@ const buttonVariants = cva(
         secondary:
           "bg-theme-orange border-2 border-theme-typography-gray text-theme-typography shadow-sm hover:bg-secondary/80",
         primary:
-          "border-2 border-theme-green text-theme-typography bg-transparent bg-theme-light-green hover:text-accent-foreground",
+          "border-2 border-theme-green text-theme-typography bg-transparent bg-theme-light-green hover:text-accent-foreground hover:bg-theme-lighter-green",
         ghost:
           "text-theme-typography-green hover:bg-theme-lighter-green hover:text-accent-foreground",
         link: "text-theme-typography-green under-theme-typography-green underline-offset-4 hover:underline",

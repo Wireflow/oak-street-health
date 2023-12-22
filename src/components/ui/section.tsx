@@ -14,9 +14,9 @@ const sectionVariants = cva("max-w-[2160px] flex flex-col", {
       "bright-white": "bg-theme-bright-white",
     },
     size: {
-      lg: "p-4 md:p-16 lg:p-18",
-      sm: "p-4 md:p-6 lg:p-8",
-      md: "p-4 md:p-10 lg:p-12",
+      lg: "p-6 md:p-16 lg:p-18",
+      sm: "p-6 md:p-6 lg:p-8",
+      md: "p-6 md:p-10 lg:p-12",
     },
     position: {
       start: "items-start",
