@@ -7,6 +7,7 @@ import MainBanner from "@/components/main-banner";
 import Quality from "@/components/Quality";
 import Together from "@/components/Together";
 import CallToAction from "@/components/call-to-action";
+import AdvertisementVideo from "@/components/ad-video";
 
 type Props = {};
 
@@ -16,6 +17,7 @@ const HomePage = (props: Props) => {
       <Navbar />
       <MainBanner />
       <CallToAction />
+      <AdvertisementVideo />
       <Together />
       <Quality />
       <Location />

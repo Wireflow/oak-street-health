@@ -10,12 +10,12 @@ const CallToAction = (props: Props) => {
   return (
     <Section
       background={"bright-white"}
-      className="flex justify-between items-center"
+      className="flex md:flex-row flex-col gap-8 justify-between items-center"
       size={"lg"}
       shape={{ color: "white", right: -200, bottom: -100, rotate: -40 }}
     >
-      <div className="z-20">
-        <h3 className="text-2xl md:text-6xl font-bold text-theme-typography mb-4">
+      <div className="z-20 text-center md:text-start">
+        <h3 className="text-4xl md:text-6xl font-bold text-theme-typography mb-4">
           Meet me at
           <br /> Oak Street Health
         </h3>
@@ -24,13 +24,13 @@ const CallToAction = (props: Props) => {
             Schedule a visit today!
           </h4>
           <Link href={"tel:7189739005"}>
-            <h3 className="text-5xl text-theme-typography-green font-bold mt-2">
+            <h3 className="text-3xl md:text-5xl text-theme-typography-green font-bold mt-2">
               (718) 973-9005
             </h3>
           </Link>
           <Link
             href={"https://oakstreethealth.com"}
-            className="flex items-center hover:underline underline-offset-4 mt-1 hover:text-theme-typography-green"
+            className="flex items-center md:justify-start justify-center hover:underline underline-offset-4 mt-1 hover:text-theme-typography-green"
           >
             <h4 className="text-2xl font-bold text-theme-typography-gray hover:text-theme-typography-green">
               oakstreethealth.com
