@@ -1,6 +1,7 @@
 import React from "react";
 import Section from "./ui/section";
 import Image from "next/image";
+import Title from "./ui/title";
 
 type Props = {};
 
@@ -18,10 +19,10 @@ const MainBanner = (props: Props) => {
         width={75}
         height={75}
       />
-      <h1 className="text-3xl lg:text-5xl text-theme-bright-white font-bold text-center">
+      <Title size={"md"} variant={"white"} className="text-center">
         Healthcare designed specially for
         <span className=" text-theme-orange"> you</span>.
-      </h1>
+      </Title>
     </Section>
   );
 };

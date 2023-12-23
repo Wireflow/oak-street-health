@@ -1,7 +1,8 @@
 import React from "react";
 import Section from "./ui/section";
 import Image from "next/image";
-import VideoFrame from "./video-frame";
+import VideoFrame from "./VideoFrame";
+import Title from "./ui/title";
 
 type Props = {};
 
@@ -9,9 +10,9 @@ const AdvertisementVideo = (props: Props) => {
   return (
     <Section size={"lg"}>
       <div className="flex justify-between items-center flex-col md:flex-row gap-8">
-        <h2 className="text-3xl md:text-5xl font-bold text-theme-typography-green text-center">
+        <Title variant={"green"} size={"md"} className="text-center">
           Helping older adults live healthier lives.
-        </h2>
+        </Title>
         <Image
           src={"/svg-aarp-logo.svg"}
           alt="aarp logo"

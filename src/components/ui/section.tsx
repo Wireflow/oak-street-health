@@ -1,8 +1,8 @@
 import React, { cloneElement, CSSProperties } from "react";
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
-import Shape from "../shape";
-import { ShapeColor } from "../shape";
+import Shape from "../Shape";
+import { ShapeColor } from "../Shape";
 
 const sectionVariants = cva("mx-auto relative overflow-hidden", {
   variants: {
@@ -39,6 +39,7 @@ interface SectionProps
     bottom?: number;
     left?: number;
     right?: number;
+    scale?: number;
   };
 }
 
@@ -55,6 +56,7 @@ const Section = ({
     left: shape?.left,
     bottom: shape?.bottom,
     top: shape?.top,
+    scale: shape?.scale,
   };
 
   return (

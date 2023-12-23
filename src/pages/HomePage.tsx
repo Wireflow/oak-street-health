@@ -1,13 +1,14 @@
 import { Button } from "@/components/ui/button";
-import Navbar from "@/components/navbar";
+import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Location from "@/components/Location";
 import React from "react";
-import MainBanner from "@/components/main-banner";
+import MainBanner from "@/components/MainBanner";
 import Quality from "@/components/Quality";
 import Together from "@/components/Together";
-import CallToAction from "@/components/call-to-action";
-import AdvertisementVideo from "@/components/ad-video";
+import CallToAction from "@/components/CallToAction";
+import AdvertisementVideo from "@/components/AdVideo";
+import Benefits from "@/components/Benefits";
 
 type Props = {};
 
@@ -18,6 +19,7 @@ const HomePage = (props: Props) => {
       <MainBanner />
       <CallToAction />
       <AdvertisementVideo />
+      <Benefits />
       <Together />
       <Quality />
       <Location />

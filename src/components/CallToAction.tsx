@@ -3,6 +3,7 @@ import Section from "./ui/section";
 import Link from "next/link";
 import { MoveRight } from "lucide-react";
 import Image from "next/image";
+import Title from "./ui/title";
 
 type Props = {};
 
@@ -15,10 +16,10 @@ const CallToAction = (props: Props) => {
       shape={{ color: "white", right: -200, bottom: -100, rotate: -40 }}
     >
       <div className="z-20 text-center md:text-start">
-        <h3 className="text-4xl md:text-6xl font-bold text-theme-typography mb-4">
+        <Title className="mb-4" variant={"default"}>
           Meet me at
           <br /> Oak Street Health
-        </h3>
+        </Title>
         <div>
           <h4 className="text-2xl font-bold text-theme-typography-gray">
             Schedule a visit today!
@@ -30,7 +31,7 @@ const CallToAction = (props: Props) => {
           </Link>
           <Link
             href={"https://oakstreethealth.com"}
-            className="flex items-center md:justify-start justify-center hover:underline underline-offset-4 mt-1 hover:text-theme-typography-green"
+            className="flex items-center md:justify-start  hover:underline underline-offset-4 mt-1 hover:text-theme-typography-green"
           >
             <h4 className="text-2xl font-bold text-theme-typography-gray hover:text-theme-typography-green">
               oakstreethealth.com
