@@ -14,7 +14,7 @@ const Location = (props: Props) => {
 
         <div className="flex flex-col gap-10">
           <div className="flex flex-col gap-10">
-            <Image src="/map.png" alt="map" width={1300} height={800} />
+            <Image src="/map.png" alt="map" width={1500} height={800} />
             <h1 className="xl:text-[55px] lg:text-[45px] md:text-[32px] sm:text-[27px] text-[20px] font-semibold text-theme-green ">
               Visit an Oak Street Health location near you.
             </h1>

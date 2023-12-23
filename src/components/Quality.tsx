@@ -7,7 +7,7 @@ type Props = {};
 const Quality = (props: Props) => {
   return (
     <Section className="" background={"green"}>
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col gap-5">
 
         <div>
           <h2 className="md:text-[60px] text-[32px] font-bold text-theme-light-green">
@@ -29,7 +29,7 @@ const Quality = (props: Props) => {
             Comprehensive, quality
             <br /> care:
           </h2>
-          <div className="flex xl:gap-[300px] lg:gap-[100px] gap-10 flex-col lg:flex-row lg:items-start ">
+          <div className="flex justify-between gap-5 flex-col lg:flex-row  ">
             <div className="flex gap-5">
               <div className="flex flex-col gap-2">
                 <p className="xl:text-[20px] text-white">
@@ -48,8 +48,8 @@ const Quality = (props: Props) => {
                 </p>
               </div>
             </div>
-            <div>
-              <h2 className="text-[25px] whitespace-nowrap text-white font-regular">
+            <div className="pr-[120px]">
+              <h2 className="text-[25px] whitespace-nowrap text-theme-lighter-green font-regular">
                 Call today to schedule or
                 <br /> learn more
               </h2>
@@ -60,7 +60,7 @@ const Quality = (props: Props) => {
 
 
 
-        <div className="flex justify-between flex-col md:flex-row gap-5">
+        <div className="flex justify-between flex-col md:flex-row md:gap-0 gap-5">
           <div>
             <p className="xl:text-[20px] text-white">
               Oak Street Health - Soundview

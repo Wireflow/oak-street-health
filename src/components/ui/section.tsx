@@ -1,8 +1,9 @@
 import React, { cloneElement, CSSProperties } from "react";
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
-import Shape from "../Shape";
-import { ShapeColor } from "../Shape";
+import Shape from "../shape";
+import { ShapeColor } from "../shape";
+import Shape2 from "../shape2";
 
 const sectionVariants = cva("mx-auto relative overflow-hidden", {
   variants: {
@@ -41,6 +42,7 @@ interface SectionProps
     right?: number;
     scale?: number;
   };
+  isShapeSmall?: boolean;
 }
 
 const Section = ({
@@ -49,6 +51,7 @@ const Section = ({
   size,
   className,
   shape,
+  isShapeSmall = true,
 }: SectionProps) => {
   const shapeStyle: CSSProperties = {
     transform: `rotate(${shape?.rotate}deg)`,
@@ -70,12 +73,28 @@ const Section = ({
     >
       <div className={cn("mx-auto max-w-[1400px]", className)}>
         {children}
-        {shape && (
-          <Shape
-            color={shape.color}
-            className="absolute z-0"
-            style={shapeStyle}
-          />
+        {isShapeSmall ? (
+          <>
+            {" "}
+            {shape && (
+              <Shape
+                color={shape.color}
+                className="absolute z-0"
+                style={shapeStyle}
+              />
+            )}
+          </>
+        ) : (
+          <>
+            {" "}
+            {shape && (
+              <Shape2
+                color={shape.color}
+                className="absolute 2xl:w-[1100px] xl:h-[748px] xl:w-[760px] lg:w-[550px] lg:h-[550px] md:h-[500px]  md:w-[500px] w-[450px] h-[500px]  z-0"
+                style={shapeStyle}
+              />
+            )}
+          </>
         )}
       </div>
     </div>
