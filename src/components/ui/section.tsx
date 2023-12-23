@@ -1,8 +1,10 @@
-import React from "react";
+import React, { cloneElement, CSSProperties } from "react";
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
+import Shape from "../shape";
+import { ShapeColor } from "../shape";
 
-const sectionVariants = cva("", {
+const sectionVariants = cva("mx-auto relative overflow-hidden", {
   variants: {
     background: {
       default: "bg-white",
@@ -30,17 +32,50 @@ interface SectionProps
   extends React.HTMLAttributes<HTMLDivElement>,
     VariantProps<typeof sectionVariants> {
   children?: React.ReactNode;
+  shape?: {
+    color: ShapeColor;
+    rotate?: number;
+    top?: number;
+    bottom?: number;
+    left?: number;
+    right?: number;
+  };
 }
 
-const Section = ({ children, background, size, className }: SectionProps) => {
+const Section = ({
+  children,
+  background,
+  size,
+  className,
+  shape,
+}: SectionProps) => {
+  const shapeStyle: CSSProperties = {
+    transform: `rotate(${shape?.rotate}deg)`,
+    right: shape?.right,
+    left: shape?.left,
+    bottom: shape?.bottom,
+    top: shape?.top,
+  };
+
   return (
     <div
       className={cn(
-        sectionVariants({ size, background, className }),
-        "mx-auto"
+        sectionVariants({
+          size,
+          background,
+        })
       )}
     >
-      {children}
+      <div className={cn("mx-auto max-w-[1400px]", className)}>
+        {children}
+        {shape && (
+          <Shape
+            color={shape.color}
+            className="absolute z-0"
+            style={shapeStyle}
+          />
+        )}
+      </div>
     </div>
   );
 };

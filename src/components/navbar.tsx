@@ -8,7 +8,7 @@ type Props = {};
 
 const Navbar = (props: Props) => {
   return (
-    <Section className="flex-col gap-4 flex justify-between items-center md:flex-row">
+    <Section className="flex-col gap-4 flex justify-between items-center md:flex-row  max-w-none">
       <Logo />
       <div className="flex gap-4 flex-wrap items-center justify-center">
         <Link

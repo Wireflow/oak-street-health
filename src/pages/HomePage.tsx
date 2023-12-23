@@ -6,6 +6,7 @@ import React from "react";
 import MainBanner from "@/components/main-banner";
 import Quality from "@/components/Quality";
 import Together from "@/components/Together";
+import CallToAction from "@/components/call-to-action";
 
 type Props = {};
 
@@ -14,8 +15,9 @@ const HomePage = (props: Props) => {
     <>
       <Navbar />
       <MainBanner />
-      <Together/>
-      <Quality/>
+      <CallToAction />
+      <Together />
+      <Quality />
       <Location />
       <Footer />
     </>
