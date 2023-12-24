@@ -8,7 +8,7 @@ type Props = {};
 const Together = (props: Props) => {
   return (
     <Section
-    className="xl:pt-[140px] pt-[90px]"
+    className="xl:pt-[140px] pt-[90px] pb-10"
       isShapeSmall={false}
       shape={{
         color: "green",
