@@ -6,7 +6,7 @@ type Props = {}
 
 const Footer = (props: Props) => {
   return (
-    <Section className='py-20' background={'green'}>
+    <Section className='py-20 flex justify-center items-center'  background={'green'}>
         <Image src='/WhiteLogo.png' alt='logo' width={300} height={300}/>
     </Section>
   )
