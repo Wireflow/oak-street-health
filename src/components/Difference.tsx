@@ -2,6 +2,7 @@ import React from "react";
 import Section from "./ui/section";
 import { DifferenceData } from "@/data/DifferenceData";
 import Image from "next/image";
+import Title from "./ui/title";
 
 type Props = {};
 
@@ -9,10 +10,10 @@ const Difference = (props: Props) => {
   return (
     <Section  className="py-10" background={"light-green"}>
       <div>
-        <h1 className="lg:text-[62px] md:text-[40px] text-[28px]  font-semibold text-theme-green">
-          Together we can make a difference.
-        </h1>
-        <p className="lg:text-[24px] md:text-[20px] lg:w-[950px] sm:w-[600px] font-medium pt-2">
+        <Title variant={'green'}>
+            Together we can make a difference.
+        </Title>
+        <p className="lg:text-[24px] md:text-[20px] lg:w-[950px] sm:w-[600px] font-medium pt-5">
           Our team takes the time to get to know you and your needs – just like
           we do for our patients. Together we can positively impact the health
           and lives of older adults and the community.
