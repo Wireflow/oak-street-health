@@ -1,7 +1,7 @@
 export const BetterCareData = [
     {
         id: 1,
-        percent: '50',
+        percent: '51',
         description: 'Reduction in patient hospital admissions compared to Medicare benchmarks'
     },
     {

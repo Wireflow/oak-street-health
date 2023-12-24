@@ -8,7 +8,7 @@ type Props = {};
 const TourVideo = (props: Props) => {
   return (
     <Section className="">
-        <Title className="font-bold" variant={'green'}>
+        <Title variant={"green"} size={"md"} className="md:text-start text-center">
             Oak Street Health Drone Tour
         </Title>
       <div className="mt-12 border-8 rounded-xl overflow-hidden border-theme-green shadow-xl">
