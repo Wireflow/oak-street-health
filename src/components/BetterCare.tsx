@@ -11,7 +11,7 @@ const BetterCare = (props: Props) => {
       <div>
         <Title variant={"white"}>Better care, better lives.</Title>
 
-        <p className="text-white text-[28px] pt-5">
+        <p className="text-white md:text-[28px] text-[20px] pt-5">
           Oak Street Health’s value-based care model delivers measurably better
           health outcomes for patients:
         </p>

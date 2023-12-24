@@ -71,7 +71,7 @@ const Section = ({
         })
       )}
     >
-      <div className={cn("mx-auto max-w-[1400px]", className)}>
+      <div className={cn("mx-auto  max-w-[1400px]", className)}>
         {children}
         {isShapeSmall ? (
           <>
