@@ -9,7 +9,7 @@ const Difference = (props: Props) => {
   return (
     <Section  className="py-10" background={"light-green"}>
       <div>
-        <h1 className="lg:text-[62px] md:text-[40px] sm:text-[28px] text-[24px] font-semibold text-theme-green">
+        <h1 className="lg:text-[62px] md:text-[40px] text-[28px]  font-semibold text-theme-green">
           Together we can make a difference.
         </h1>
         <p className="lg:text-[24px] md:text-[20px] lg:w-[950px] sm:w-[600px] font-medium pt-2">
@@ -19,7 +19,7 @@ const Difference = (props: Props) => {
         </p>
       </div>
       <div className="flex sm:items-start mt-5 justify-between gap-10 flex-col sm:flex-row">
-        <div>
+        <div className="flex flex-col gap-3">
             <h1 className="lg:text-[55px] md:text-[35px] sm:text-[28px] text-[24px] font-medium text-theme-green whitespace-nowrap">
               Getting started is easy!
             </h1>
@@ -38,11 +38,11 @@ const Difference = (props: Props) => {
         </div>
         <div className="flex flex-col gap-10  sm:items-end">
             <div >
-                <Image className="lg:w-[550px] md:w-[350px] w-[300px]" src={'/svg-difference-illustration.svg'} alt="illustartion-people-gathered" width={700} height={400}/>
+                <Image className="lg:w-[550px] sm:block hidden md:w-[350px] w-[300px]" src={'/svg-difference-illustration.svg'} alt="illustartion-people-gathered" width={700} height={400}/>
             
             </div>
             <div className="flex  justify-end">
-                 <Image className="" src='/OakGreen.png' alt='logo' width={200} height={200}/>
+                 <Image className="lg:w-[200px] w-[150px]" src='/OakGreen.png' alt='logo' width={200} height={200}/>
             </div>
         </div>
       </div>
