@@ -13,6 +13,7 @@ import Difference from "@/components/Difference";
 import BetterCare from "@/components/BetterCare";
 import TourVideo from "@/components/TourVideo";
 import Healthcare from "@/components/Healthcare";
+import Switch from "@/components/Switch";
 
 type Props = {};
 
@@ -25,6 +26,7 @@ const HomePage = (props: Props) => {
       <AdvertisementVideo />
       <TourVideo />
       <Benefits />
+      <Switch/>
       <Healthcare/>
       <BetterCare />
       <Difference />
