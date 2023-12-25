@@ -11,7 +11,7 @@ const CallToAction = (props: Props) => {
   return (
     <Section
       background={"green"}
-      className="flex flex-col-reverse xs:flex-row md:items-start   xl:pb-40  "
+      className="flex flex-col-reverse sm:flex-row items-center    "
       size={"lg"}
     >
       <div className="flex flex-col items-start z-20  gap-5">
@@ -52,7 +52,7 @@ const CallToAction = (props: Props) => {
 
       <div className="flex justify-end">
         <Image
-          className="sm:absolute   sm:right-0 sm:top-[0px]  xl:w-[800px] lg:w-[500px] md:w-[400px] sm:w-[350px] w-full"
+          className="  xl:w-[800px] lg:w-[500px] md:w-[400px] sm:w-[350px] w-full"
           src={"/hero-illustration.png"}
           alt="illustration"
           width={800}
