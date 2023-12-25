@@ -11,12 +11,16 @@ const CallToAction = (props: Props) => {
   return (
     <Section
       background={"green"}
-      className="flex flex-col-reverse lg:flex-row lg:items-center    "
+      className="flex flex-col-reverse lg:flex-row lg:items-center  mt-[-25px]  "
       size={"lg"}
     >
       <div className="flex flex-col items-start z-20  gap-5">
         <div>
-          <Title size={"lg"} className="xl:text-[70px] whitespace-nowrap" variant={"white"}>
+          <Title
+            size={"lg"}
+            className="xl:text-[70px] whitespace-nowrap"
+            variant={"white"}
+          >
             Meet me at
             <br /> Oak Street Health
           </Title>
