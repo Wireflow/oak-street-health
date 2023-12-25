@@ -14,8 +14,8 @@ const Switch = (props: Props) => {
         </div>
           <div className="flex flex-col items-start gap-5 md:pr-20">
             <div className=" xl:leading-[55px]">
-                <h2 className="xl:text-[50px] lg:text-[38px] text-[24px] font-semibold">Ready to switch?</h2>
-                <h2 className="xl:text-[50px] lg:text-[38px] text-[24px] font-semibold md:whitespace-nowrap ">We make that easy, too.</h2>
+                <h2 className="xl:text-[50px] lg:text-[38px] text-[28px] font-semibold">Ready to switch?</h2>
+                <h2 className="xl:text-[50px] lg:text-[38px] text-[28px] font-semibold md:whitespace-nowrap ">We make that easy, too.</h2>
             </div>
             <p className="xl:w-[500px] xl:text-[20px] lg:text-[18px]">
               Changing doctors doesn’t have to be a pain. We’ll take care of

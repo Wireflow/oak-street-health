@@ -9,14 +9,14 @@ type Props = {};
 const AdvertisementVideo = (props: Props) => {
   return (
     <Section size={"lg"}>
-      <div className="flex justify-between items-center flex-col md:flex-row gap-8">
-        <Title variant={"green"} size={"md"} className="text-center">
+      <div className="flex justify-between md:items-start items-center  flex-col xl:flex-row gap-8">
+        <Title variant={"green"} size={"md"} className="text-center md:text-start" >
           Helping older adults live healthier lives.
         </Title>
         <Image
           src={"/svg-aarp-logo.svg"}
           alt="aarp logo"
-          width={330}
+          width={230}
           height={70}
         />
       </div>

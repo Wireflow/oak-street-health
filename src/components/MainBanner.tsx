@@ -19,7 +19,7 @@ const MainBanner = (props: Props) => {
         width={75}
         height={75}
       />
-      <Title size={"md"} variant={"white"} className="text-center">
+      <Title size={"sm"} variant={"white"} className="text-center text-[20px]">
         Healthcare designed specially for
         <span className=" text-theme-orange"> you</span>.
       </Title>

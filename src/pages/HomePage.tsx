@@ -21,13 +21,16 @@ const HomePage = (props: Props) => {
   return (
     <>
       <Navbar />
-      <MainBanner />  
+      <MainBanner />
+      <CallToAction /> 
+     
       <AdvertisementVideo />
-      <TourVideo />
-      <CallToAction />
-      <Benefits />
-      <Switch/>
-      <Healthcare/>
+     <TourVideo />
+   
+      <Switch />
+      <Healthcare /> 
+       <Benefits />
+        
       <BetterCare />
       <Difference />
       <Together />

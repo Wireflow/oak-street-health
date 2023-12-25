@@ -7,11 +7,11 @@ type Props = {};
 
 const Healthcare = (props: Props) => {
   return (
-    <Section className="py-10 flex flex-col gap-10">
+    <Section background={'bright-white'} className="py-10 flex flex-col gap-10">
       <div className="flex flex-col-reverse lg:flex-row justify-between gap-10">
         <div className="flex flex-col gap-10">
           <Title
-            className="   md:w-[700px] sm:w-[400px] w-[350px] md:leading-[60px] leading-[40px] font-bold "
+            className="   md:w-[700px] sm:w-[400px]  md:leading-[60px] leading-[40px] font-bold "
             size={"lg"}
           >
             Healthcare shouldn&apos;t be one size fits all.
@@ -42,7 +42,7 @@ const Healthcare = (props: Props) => {
           />
         </div>
       </div>
-      <div className="  border-theme-light-green border-l-[20px] rounded-xl border-[7px]">
+      <div className=" bg-white  border-theme-light-green border-l-[20px] rounded-xl border-[7px]">
         <div className="flex  flex-col gap-10 rounded-xl p-5 relative">
           <Title
             className="text-[20px]  leading-[60px] font-bold"

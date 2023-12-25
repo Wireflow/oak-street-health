@@ -10,35 +10,31 @@ type Props = {};
 const CallToAction = (props: Props) => {
   return (
     <Section
-      background={"bright-white"}
-      className="flex  flex-col   md:justify-start justify-end md:pt-0 pt-40   "
+      background={"green"}
+      className="flex flex-col-reverse xs:flex-row md:items-start   xl:pb-40  "
       size={"lg"}
     >
-
-
-      <div className="flex flex-col items-start z-20  gap-2">
-
+      <div className="flex flex-col items-start z-20  gap-5">
         <div>
-          <Title size={"md"} className="" variant={"default"}>
+          <Title size={"lg"} className="xl:text-[70px]" variant={"white"}>
             Meet me at
             <br /> Oak Street Health
           </Title>
-          <Image
+          {/* <Image
             className="sm:w-[350px] w-[250px] my-10"
             src={"/svg-illustration-1.svg"}
             alt="illustration"
             width={350}
             height={400}
-          />
+          /> */}
         </div>
 
-
         <div>
-          <h4 className="md:text-2xl text-xl font-medium text-theme-typography-gray">
+          <h4 className="md:text-2xl text-xl font-medium text-theme-light-green">
             Schedule a visit today!
           </h4>
           <Link href={"tel:7189739005"}>
-            <h3 className="text-2xl md:text-5xl text-theme-typography-green font-bold mt-2">
+            <h3 className="text-3xl md:text-5xl text-theme-lighter-green font-bold mt-2">
               (718) 973-9005
             </h3>
           </Link>
@@ -46,20 +42,17 @@ const CallToAction = (props: Props) => {
             href={"https://oakstreethealth.com"}
             className="flex items-center md:justify-start  hover:underline underline-offset-4 mt-1 hover:text-theme-typography-green"
           >
-            <h4 className="md:text-2xl text-xl font-medium text-theme-typography-gray hover:text-theme-typography-green">
+            <h4 className="md:text-2xl text-xl font-medium text-theme-light-green hover:text-theme-typography-green">
               oakstreethealth.com
             </h4>
             <MoveRight className="text-theme-green w-6 h-6 mt-1 ml-1" />
           </Link>
         </div>
-
-
       </div>
 
-
-      <div>
+      <div className="flex justify-end">
         <Image
-          className="absolute  right-0 top-[0px]  xl:w-[1000px] lg:w-[700px] md:w-[500px] sm:w-[400px] w-[300px]"
+          className="sm:absolute   sm:right-0 sm:top-[0px]  xl:w-[800px] lg:w-[500px] md:w-[400px] sm:w-[350px] w-full"
           src={"/hero-illustration.png"}
           alt="illustration"
           width={800}
