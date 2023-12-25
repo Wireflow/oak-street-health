@@ -46,7 +46,7 @@ const Location = (props: Props) => {
               </p>
             </div>
             <div className="flex items-end gap-5">
-              <Image src="/OakGreen.png" alt="map" width={220} height={200} />
+              <Image src="/OakGreen.png" alt="map" width={200} height={200} />
               <Image src="/AARPLogo.png" alt="map" width={130} height={200} />
             </div>
           </div>
