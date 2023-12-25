@@ -11,12 +11,12 @@ const CallToAction = (props: Props) => {
   return (
     <Section
       background={"green"}
-      className="flex flex-col-reverse sm:flex-row items-center    "
+      className="flex flex-col-reverse lg:flex-row lg:items-center    "
       size={"lg"}
     >
       <div className="flex flex-col items-start z-20  gap-5">
         <div>
-          <Title size={"lg"} className="xl:text-[70px]" variant={"white"}>
+          <Title size={"lg"} className="xl:text-[70px] whitespace-nowrap" variant={"white"}>
             Meet me at
             <br /> Oak Street Health
           </Title>
@@ -52,7 +52,7 @@ const CallToAction = (props: Props) => {
 
       <div className="flex justify-end">
         <Image
-          className="  xl:w-[800px] lg:w-[500px] md:w-[400px] sm:w-[350px] w-full"
+          className="  xl:w-[800px] lg:w-[900px] "
           src={"/hero-illustration.png"}
           alt="illustration"
           width={800}
