@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import Navbar from "@/components/navbar";
+import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Location from "@/components/Location";
 import React from "react";
@@ -22,16 +22,13 @@ const HomePage = (props: Props) => {
     <>
       <Navbar />
       <MainBanner />
-      <CallToAction /> 
-     
+      <CallToAction />
       <AdvertisementVideo />
-     <TourVideo />
-   
-      <Switch />
-      <Healthcare /> 
-       <Benefits />
-        
+      <Healthcare />
+      <Benefits />
+      <TourVideo />
       <BetterCare />
+      <Switch />
       <Difference />
       <Together />
       <Quality />

@@ -8,19 +8,22 @@ type Props = {};
 const Together = (props: Props) => {
   return (
     <Section
-    className="xl:pt-[140px] pt-[90px] pb-10"
+      className="xl:pt-[140px] pt-[90px] pb-10"
       isShapeSmall={false}
       shape={{
         color: "green",
         left: -80,
         top: -50,
-        
       }}
       background={"blue"}
     >
       <div className="flex justify-between flex-col sm:flex-row gap-10">
         <div className=" flex flex-col gap-20 z-10">
-          <Title variant={'white'} size={"lg"} className="leading-[1] 2xl:w-[460px] xl:w-[380px] lg:w-[350px] w-[250px] 2xl:text-[50px] xl:text-[45px] lg:text-[35px] md:text-[30px] text-[28px]   font-bold text-white ">
+          <Title
+            variant={"white"}
+            size={"lg"}
+            className="leading-[1] 2xl:w-[460px] max-w-[250px]  md:max-w-[380px] 2xl:text-[50px] xl:text-[45px] lg:text-[35px] md:text-[30px] text-[28px]   font-bold text-white "
+          >
             Working together to enrich the lives of older adults.
           </Title>
           <Image
@@ -42,7 +45,9 @@ const Together = (props: Props) => {
               of older adults, including:
             </p>
             <div>
-              <p className="text-theme-green font-medium xl:text-[26px] md:text-[18px]">• Games and crafts</p>
+              <p className="text-theme-green font-medium xl:text-[26px] md:text-[18px]">
+                • Games and crafts
+              </p>
               <p className="text-theme-green font-medium xl:text-[26px] md:text-[18px]">
                 • Health and special interest education
               </p>

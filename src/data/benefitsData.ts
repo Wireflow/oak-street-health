@@ -16,7 +16,7 @@ const benefitsData = [
   },
   {
     icon: React.createElement(Plus, {
-      className: "stroke-theme-lighter-green w-16 h-16",
+      className: "stroke-theme-lighter-green  w-16 h-16",
       strokeWidth: 5,
     }),
     description: "Help understanding your medicare benefits",

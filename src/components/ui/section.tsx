@@ -1,11 +1,11 @@
 import React, { cloneElement, CSSProperties } from "react";
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
-import Shape from "../shape";
-import { ShapeColor } from "../shape";
+import Shape from "../Shape";
+import { ShapeColor } from "../Shape";
 import Shape2 from "../shape2";
 
-const sectionVariants = cva("mx-auto relative overflow-hidden", {
+const sectionVariants = cva("mx-auto relative", {
   variants: {
     background: {
       default: "bg-white",
@@ -41,6 +41,7 @@ interface SectionProps
     left?: number;
     right?: number;
     scale?: number;
+    className?: string;
   };
   isShapeSmall?: boolean;
 }
@@ -68,7 +69,8 @@ const Section = ({
         sectionVariants({
           size,
           background,
-        })
+        }),
+        shape ? "overflow-hidden" : ""
       )}
     >
       <div className={cn("mx-auto  max-w-[1400px]", className)}>
@@ -79,7 +81,7 @@ const Section = ({
             {shape && (
               <Shape
                 color={shape.color}
-                className="absolute z-0"
+                className={cn("absolute z-0", shape.className)}
                 style={shapeStyle}
               />
             )}

@@ -9,7 +9,7 @@ const Quality = (props: Props) => {
     <Section className="py-10" background={"green"}>
       <div className="flex flex-col gap-10">
         <div className="flex flex-col gap-2">
-          <h2 className="md:text-[60px] text-[32px] font-bold text-theme-light-green whitespace-nowrap">
+          <h2 className="md:text-[60px] text-[32px] font-bold text-theme-light-green">
             Never feel like a number.
           </h2>
           <h2 className="md:text-[60px] text-[32px] font-bold text-theme-light-green">
@@ -46,9 +46,10 @@ const Quality = (props: Props) => {
               </div>
             </div>
             <div className="">
-              <h2 className="text-[25px] md:whitespace-nowrap text-theme-lighter-green font-regular">
-                Call today to <span className="text-theme-orange">schedule</span> or
-               learn more
+              <h2 className="text-[25px]  text-theme-lighter-green font-regular">
+                Call today to{" "}
+                <span className="text-theme-orange">schedule</span> or learn
+                more
               </h2>
               <p className="text-[28px] text-white font-bold">(718) 691-0944</p>
             </div>
@@ -66,7 +67,7 @@ const Quality = (props: Props) => {
               oakstreethealth.com | Se habla español
             </p>
           </div>
-          <div className="flex items-end  gap-5">
+          <div className="flex items-end flex-wrap gap-5">
             <Image src="/whiteLogo.png" alt="map" width={200} height={200} />
             <Image src="/AARPLogo.png" alt="map" width={130} height={200} />
           </div>

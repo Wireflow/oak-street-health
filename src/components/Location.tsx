@@ -10,8 +10,6 @@ const Location = (props: Props) => {
   return (
     <Section>
       <div className="flex flex-col gap-[100px] pb-10">
-
-
         <div className="flex flex-col gap-10">
           <div className="flex flex-col gap-10">
             <Image src="/map.png" alt="map" width={1500} height={800} />
@@ -24,7 +22,9 @@ const Location = (props: Props) => {
               <Image src="/mapIcon.png" alt="map" width={84} height={64} />
             </div>
             <div>
-              <p className="lg:text-[37px] md:text-[29px] text-[24px] font-bold">Soundview</p>
+              <p className="lg:text-[37px] md:text-[29px] text-[24px] font-bold">
+                Soundview
+              </p>
               <p className="lg:text-[35px] md:text-[28px] text-[24px] font-medium">
                 1555 Westchester Ave
                 <br /> Bronx, NY 10472-2910
@@ -32,7 +32,6 @@ const Location = (props: Props) => {
             </div>
           </div>
         </div>
-
 
         <div className="flex flex-col gap-10">
           <div className="flex flex-col lg:flex-row lg:items-center justify-between  gap-5">
@@ -45,24 +44,12 @@ const Location = (props: Props) => {
                 </Link>
               </p>
             </div>
-            <div className="flex items-end gap-5">
+            <div className="flex items-end flex-wrap gap-5">
               <Image src="/OakGreen.png" alt="map" width={200} height={200} />
               <Image src="/AARPLogo.png" alt="map" width={130} height={200} />
             </div>
           </div>
-          <div>
-            <p className="lg:w-[1000px] xl:text-[16px] text-[12px] font-bold">
-              *This location is coming soon. **Primary care services are
-              provided by Oak Street Health. AARP and its affiliates do not
-              employ Oak Street Health physicians and staff, and are not
-              responsible for the services provided by them. Oak Street Health
-              pays a royalty fee to AARP for the use of its intellectual
-              property. These fees are used for the general purposes of AARP.
-            </p>
-          </div>
         </div>
-
-        
       </div>
     </Section>
   );

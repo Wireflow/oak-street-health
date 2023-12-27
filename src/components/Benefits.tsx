@@ -19,6 +19,7 @@ const Benefits = (props: Props) => {
         left: -300,
         bottom: -300,
         scale: 1.4,
+        className: "hidden md:block",
       }}
     >
       <div className="grid gap-12 z-10">
