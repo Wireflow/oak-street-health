@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import Healthcare from "@/components/Healthcare";
 import Location from "@/components/Location";
 import MainBanner from "@/components/MainBanner";
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/navbar";
 import Quality from "@/components/Quality";
 import Switch from "@/components/Switch";
 import Together from "@/components/Together";

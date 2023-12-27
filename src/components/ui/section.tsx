@@ -1,8 +1,8 @@
 import React, { cloneElement, CSSProperties } from "react";
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
-import Shape from "../Shape";
-import { ShapeColor } from "../Shape";
+import Shape from "../shape";
+import { ShapeColor } from "../shape";
 import Shape2 from "../shape2";
 
 const sectionVariants = cva("mx-auto relative", {
