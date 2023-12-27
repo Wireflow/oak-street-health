@@ -1,19 +1,17 @@
-import { Button } from "@/components/ui/button";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import Location from "@/components/Location";
-import React from "react";
-import MainBanner from "@/components/MainBanner";
-import Quality from "@/components/Quality";
-import Together from "@/components/Together";
-import CallToAction from "@/components/CallToAction";
 import AdvertisementVideo from "@/components/AdVideo";
 import Benefits from "@/components/Benefits";
-import Difference from "@/components/Difference";
 import BetterCare from "@/components/BetterCare";
-import TourVideo from "@/components/TourVideo";
+import CallToAction from "@/components/CallToAction";
+import Difference from "@/components/Difference";
+import Footer from "@/components/Footer";
 import Healthcare from "@/components/Healthcare";
+import Location from "@/components/Location";
+import MainBanner from "@/components/MainBanner";
+import Navbar from "@/components/Navbar";
+import Quality from "@/components/Quality";
 import Switch from "@/components/Switch";
+import Together from "@/components/Together";
+import TourVideo from "@/components/TourVideo";
 
 type Props = {};
 
