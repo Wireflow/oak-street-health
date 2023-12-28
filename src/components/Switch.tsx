@@ -2,6 +2,7 @@ import React from "react";
 import Section from "./ui/section";
 import Image from "next/image";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 type Props = {};
 
@@ -33,7 +34,14 @@ const Switch = (props: Props) => {
             of your medical records, to notifying your insurance company so they
             can update their files.
           </p>
-          <Button className="text-[16px]">Get Started</Button>
+          <Link
+            href={"https://oakstreethealth.com"}
+            passHref
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Button className="text-[16px]">Get Started</Button>
+          </Link>
         </div>
       </div>
     </Section>
