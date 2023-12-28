@@ -11,7 +11,7 @@ const CallToAction = (props: Props) => {
   return (
     <Section
       background={"bright-white"}
-      className="flex  justify-between items-start flex-col md:flex-row lg:items-center "
+      className="flex  justify-between items-start flex-col lg:flex-row lg:items-center "
       size={"lg"}
       shape={{
         color: "white",
@@ -23,7 +23,7 @@ const CallToAction = (props: Props) => {
     >
       <div className="flex flex-col items-start z-30  gap-5">
         <div>
-          <Title size={"lg"}>
+          <Title className="xl:text-6xl md:text-5xl  " size={"lg"}>
             Meet me at
             <br /> Oak Street Health
           </Title>
@@ -34,7 +34,7 @@ const CallToAction = (props: Props) => {
             Schedule a visit today!
           </h4>
           <Link href={"tel:7189739005"}>
-            <h3 className="text-3xl md:text-5xl text-theme-green font-bold mt-2">
+            <h3 className="text-3xl lg:text-5xl text-theme-green font-bold mt-2">
               (718) 973-9005
             </h3>
           </Link>
@@ -49,7 +49,7 @@ const CallToAction = (props: Props) => {
           </Link>
         </div>
       </div>
-      <div className="z-20 min-w-[200]">
+      <div className="z-20 min-w-[200] flex justify-end lg:w-fit w-full ">
         <Image
           className="my-10"
           src={"/svg-illustration-1.svg"}
