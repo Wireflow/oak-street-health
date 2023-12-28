@@ -11,7 +11,7 @@ const CallToAction = (props: Props) => {
   return (
     <Section
       background={"bright-white"}
-      className="flex  justify-between items-center flex-col md:flex-row lg:items-center "
+      className="flex  justify-between items-start flex-col md:flex-row lg:items-center "
       size={"lg"}
       shape={{
         color: "white",
@@ -23,7 +23,7 @@ const CallToAction = (props: Props) => {
     >
       <div className="flex flex-col items-start z-30  gap-5">
         <div>
-          <Title size={"lg"} className="xl:text-[70px] whitespace-nowrap">
+          <Title size={"lg"}>
             Meet me at
             <br /> Oak Street Health
           </Title>
