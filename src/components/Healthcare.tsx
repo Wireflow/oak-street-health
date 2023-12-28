@@ -7,7 +7,7 @@ type Props = {};
 
 const Healthcare = (props: Props) => {
   return (
-    <div className=" xs:mb-[43rem] sm:mb-[20rem] md:mb-[25rem] lg:mb-[25rem] xl:mb-60 relative">
+    <div className=" mb-[43rem] sm:mb-[20rem] md:mb-[25rem] lg:mb-[25rem] xl:mb-60 relative">
       <Section
         background={"light-green"}
         className="py-10 flex flex-col gap-10 pb-20"
